@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun May 14 13:53:27 2023
+# Process ID: 94300
+# Current directory: D:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.runs/sys_top_v2nfc_0_1_synth_1
+# Command line: vivado.exe -log sys_top_v2nfc_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sys_top_v2nfc_0_1.tcl
+# Log file: D:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.runs/sys_top_v2nfc_0_1_synth_1/sys_top_v2nfc_0_1.vds
+# Journal file: D:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.runs/sys_top_v2nfc_0_1_synth_1\vivado.jou
+#-----------------------------------------------------------
+source sys_top_v2nfc_0_1.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 355.246 ; gain = 64.273
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.ipdefs/ip-repo_0_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 395.992 ; gain = 40.746
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is d:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.cache/ip 
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP sys_top_v2nfc_0_1, cache-ID = 971d346a10bd4bdf.
+INFO: [Common 17-206] Exiting Vivado at Sun May 14 13:54:10 2023...

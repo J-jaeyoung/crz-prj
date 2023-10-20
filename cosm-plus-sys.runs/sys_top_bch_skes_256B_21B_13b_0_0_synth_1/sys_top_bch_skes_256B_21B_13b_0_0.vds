@@ -1,0 +1,863 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun May 14 13:57:02 2023
+# Process ID: 263008
+# Current directory: D:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.runs/sys_top_bch_skes_256B_21B_13b_0_0_synth_1
+# Command line: vivado.exe -log sys_top_bch_skes_256B_21B_13b_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sys_top_bch_skes_256B_21B_13b_0_0.tcl
+# Log file: D:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.runs/sys_top_bch_skes_256B_21B_13b_0_0_synth_1/sys_top_bch_skes_256B_21B_13b_0_0.vds
+# Journal file: D:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.runs/sys_top_bch_skes_256B_21B_13b_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source sys_top_bch_skes_256B_21B_13b_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 354.637 ; gain = 67.656
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.ipdefs/ip-repo_0_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 395.965 ; gain = 41.328
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is d:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.cache/ip 
+Command: synth_design -top sys_top_bch_skes_256B_21B_13b_0_0 -part xczu17eg-ffvc1760-2-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu17eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu17eg'
+INFO: [Device 21-403] Loading part xczu17eg-ffvc1760-2-e
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 253148 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1558.129 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'sys_top_bch_skes_256B_21B_13b_0_0' [d:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.srcs/sources_1/bd/sys_top/ip/sys_top_bch_skes_256B_21B_13b_0_0_1/synth/sys_top_bch_skes_256B_21B_13b_0_0.v:56]
+INFO: [Synth 8-6157] synthesizing module 'SharedKESTop' [d:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.srcs/sources_1/bd/sys_top/ipshared/d103/src/SharedKESTop.v:49]
+	Parameter Channel bound to: 4 - type: integer 
+	Parameter Multi bound to: 2 - type: integer 
+	Parameter GaloisFieldDegree bound to: 12 - type: integer 
+	Parameter MaxErrorCountBits bound to: 9 - type: integer 
+	Parameter Syndromes bound to: 27 - type: integer 
+	Parameter ELPCoefficients bound to: 15 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'InterChannelSyndromeBuffer' [d:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.srcs/sources_1/bd/sys_top/ipshared/d103/src/InterChannelSyndromeBuffer.v:49]
+	Parameter Channel bound to: 4 - type: integer 
+	Parameter Multi bound to: 2 - type: integer 
+	Parameter GaloisFieldDegree bound to: 12 - type: integer 
+	Parameter Syndromes bound to: 27 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'd_SC_KES_buffer' [d:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.srcs/sources_1/bd/sys_top/ipshared/d103/src/d_SC_KES_buffer.v:49]
+	Parameter Multi bound to: 2 - type: integer 
+	Parameter GF bound to: 12 - type: integer 
+	Parameter Syndromes bound to: 27 - type: integer 
+	Parameter State_Idle bound to: 6'b000001 
+	Parameter State_Input bound to: 6'b000010 
+	Parameter State_Shift bound to: 6'b000100 
+	Parameter State_Standby bound to: 6'b001000 
+	Parameter State_FowardStandby bound to: 6'b010000 
+	Parameter State_Output bound to: 6'b100000 
+INFO: [Synth 8-6155] done synthesizing module 'd_SC_KES_buffer' (1#1) [d:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.srcs/sources_1/bd/sys_top/ipshared/d103/src/d_SC_KES_buffer.v:49]
+INFO: [Synth 8-6157] synthesizing module 'ChannelArbiter' [d:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.srcs/sources_1/bd/sys_top/ipshared/d103/src/ChannelArbiter.v:50]
+	Parameter State_Idle bound to: 5'b00001 
+	Parameter State_Select bound to: 5'b00010 
+	Parameter State_Out bound to: 5'b00100 
+	Parameter State_Dummy bound to: 5'b01000 
+	Parameter State_Standby bound to: 5'b10000 
+INFO: [Synth 8-6155] done synthesizing module 'ChannelArbiter' (2#1) [d:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.srcs/sources_1/bd/sys_top/ipshared/d103/src/ChannelArbiter.v:50]
+INFO: [Synth 8-6155] done synthesizing module 'InterChannelSyndromeBuffer' (3#1) [d:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.srcs/sources_1/bd/sys_top/ipshared/d103/src/InterChannelSyndromeBuffer.v:49]
+INFO: [Synth 8-6157] synthesizing module 'd_BCH_KES_top' [d:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.srcs/sources_1/bd/sys_top/ipshared/d103/src/d_KES_top.v:69]
+	Parameter D_KES_VALUE_ZERO bound to: 12'b000000000000 
+	Parameter D_KES_VALUE_ONE bound to: 12'b000000000001 
+	Parameter KES_FSM_BIT bound to: 7 - type: integer 
+	Parameter KES_RESET bound to: 7'b0000001 
+	Parameter KES_START bound to: 7'b0000010 
+	Parameter KES_STEP1 bound to: 7'b0000100 
+	Parameter KES_STEP2 bound to: 7'b0001000 
+	Parameter KES_FWD bound to: 7'b0010000 
+	Parameter KES_PAUSE bound to: 7'b0100000 
+	Parameter KES_OUT bound to: 7'b1000000 
+INFO: [Synth 8-226] default block is never used [d:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.srcs/sources_1/bd/sys_top/ipshared/d103/src/d_KES_top.v:606]
+INFO: [Synth 8-6157] synthesizing module 'd_KES_PE_DC_2MAXodr' [d:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.srcs/sources_1/bd/sys_top/ipshared/d103/src/d_KES_PE_DC_2MAXodr.v:61]
+	Parameter D_KES_VALUE_ZERO bound to: 12'b000000000000 
+	Parameter D_KES_VALUE_ONE bound to: 12'b000000000001 
+	Parameter PE_DC_RST bound to: 2'b01 
+	Parameter PE_DC_INP bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'd_parallel_FFM_gate_GF12' [d:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.srcs/sources_1/bd/sys_top/ipshared/d103/src/d_parallel_FFM_gate_GF12.v:62]
+INFO: [Synth 8-6157] synthesizing module 'd_partial_FFM_gate_6b' [d:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.srcs/sources_1/bd/sys_top/ipshared/d103/src/d_partial_FFM_gate_6b.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'd_partial_FFM_gate_6b' (4#1) [d:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.srcs/sources_1/bd/sys_top/ipshared/d103/src/d_partial_FFM_gate_6b.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'd_parallel_FFM_gate_GF12' (5#1) [d:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.srcs/sources_1/bd/sys_top/ipshared/d103/src/d_parallel_FFM_gate_GF12.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'd_KES_PE_DC_2MAXodr' (6#1) [d:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.srcs/sources_1/bd/sys_top/ipshared/d103/src/d_KES_PE_DC_2MAXodr.v:61]
+INFO: [Synth 8-6157] synthesizing module 'd_KES_PE_DC_NMLodr' [d:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.srcs/sources_1/bd/sys_top/ipshared/d103/src/d_KES_PE_DC_NMLodr.v:61]
+	Parameter D_KES_VALUE_ZERO bound to: 12'b000000000000 
+	Parameter D_KES_VALUE_ONE bound to: 12'b000000000001 
+	Parameter PE_DC_RST bound to: 2'b01 
+	Parameter PE_DC_INP bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'd_KES_PE_DC_NMLodr' (7#1) [d:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.srcs/sources_1/bd/sys_top/ipshared/d103/src/d_KES_PE_DC_NMLodr.v:61]
+INFO: [Synth 8-6157] synthesizing module 'd_KES_PE_ELU_eMAXodr' [d:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.srcs/sources_1/bd/sys_top/ipshared/d103/src/d_KES_PE_ELU_eMAXodr.v:61]
+	Parameter D_KES_VALUE_ZERO bound to: 12'b000000000000 
+	Parameter D_KES_VALUE_ONE bound to: 12'b000000000001 
+	Parameter PE_ELU_RST bound to: 2'b01 
+	Parameter PE_ELU_OUT bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'd_KES_PE_ELU_eMAXodr' (8#1) [d:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.srcs/sources_1/bd/sys_top/ipshared/d103/src/d_KES_PE_ELU_eMAXodr.v:61]
+INFO: [Synth 8-6157] synthesizing module 'd_KES_PE_ELU_NMLodr' [d:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.srcs/sources_1/bd/sys_top/ipshared/d103/src/d_KES_PE_ELU_NMLodr.v:61]
+	Parameter D_KES_VALUE_ZERO bound to: 12'b000000000000 
+	Parameter D_KES_VALUE_ONE bound to: 12'b000000000001 
+	Parameter PE_ELU_RST bound to: 2'b01 
+	Parameter PE_ELU_OUT bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'd_KES_PE_ELU_NMLodr' (9#1) [d:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.srcs/sources_1/bd/sys_top/ipshared/d103/src/d_KES_PE_ELU_NMLodr.v:61]
+INFO: [Synth 8-6157] synthesizing module 'd_KES_PE_ELU_sMINodr' [d:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.srcs/sources_1/bd/sys_top/ipshared/d103/src/d_KES_PE_ELU_sMINodr.v:61]
+	Parameter D_KES_VALUE_ZERO bound to: 12'b000000000000 
+	Parameter D_KES_VALUE_ONE bound to: 12'b000000000001 
+	Parameter PE_ELU_RST bound to: 2'b01 
+	Parameter PE_ELU_OUT bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'd_KES_PE_ELU_sMINodr' (10#1) [d:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.srcs/sources_1/bd/sys_top/ipshared/d103/src/d_KES_PE_ELU_sMINodr.v:61]
+INFO: [Synth 8-6157] synthesizing module 'd_KES_PE_ELU_MINodr' [d:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.srcs/sources_1/bd/sys_top/ipshared/d103/src/d_KES_PE_ELU_MINodr.v:61]
+	Parameter D_KES_VALUE_ZERO bound to: 12'b000000000000 
+	Parameter D_KES_VALUE_ONE bound to: 12'b000000000001 
+	Parameter PE_ELU_RST bound to: 2'b01 
+	Parameter PE_ELU_OUT bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'd_KES_PE_ELU_MINodr' (11#1) [d:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.srcs/sources_1/bd/sys_top/ipshared/d103/src/d_KES_PE_ELU_MINodr.v:61]
+WARNING: [Synth 8-6014] Unused sequential element r_ELP_degree_condition_violation_reg was removed.  [d:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.srcs/sources_1/bd/sys_top/ipshared/d103/src/d_KES_top.v:591]
+INFO: [Synth 8-6155] done synthesizing module 'd_BCH_KES_top' (12#1) [d:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.srcs/sources_1/bd/sys_top/ipshared/d103/src/d_KES_top.v:69]
+INFO: [Synth 8-6157] synthesizing module 'InterChannelELPBuffer' [d:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.srcs/sources_1/bd/sys_top/ipshared/d103/src/InterChannelELPBuffer.v:49]
+	Parameter Channel bound to: 4 - type: integer 
+	Parameter Multi bound to: 2 - type: integer 
+	Parameter MaxErrorCountBits bound to: 9 - type: integer 
+	Parameter GaloisFieldDegree bound to: 12 - type: integer 
+	Parameter ELPCoefficients bound to: 15 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'd_KES_CS_buffer' [d:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.srcs/sources_1/bd/sys_top/ipshared/d103/src/d_KES_CS_buffer.v:50]
+	Parameter Multi bound to: 2 - type: integer 
+	Parameter GaloisFieldDegree bound to: 12 - type: integer 
+	Parameter MaxErrorCountBits bound to: 9 - type: integer 
+	Parameter ELPCoefficients bound to: 15 - type: integer 
+	Parameter State_Idle bound to: 4'b0000 
+	Parameter State_Input bound to: 4'b0001 
+	Parameter State_Standby bound to: 4'b0010 
+	Parameter State_Out_Ready bound to: 4'b0100 
+	Parameter State_Output bound to: 4'b1000 
+INFO: [Synth 8-226] default block is never used [d:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.srcs/sources_1/bd/sys_top/ipshared/d103/src/d_KES_CS_buffer.v:331]
+INFO: [Synth 8-6155] done synthesizing module 'd_KES_CS_buffer' (13#1) [d:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.srcs/sources_1/bd/sys_top/ipshared/d103/src/d_KES_CS_buffer.v:50]
+INFO: [Synth 8-6155] done synthesizing module 'InterChannelELPBuffer' (14#1) [d:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.srcs/sources_1/bd/sys_top/ipshared/d103/src/InterChannelELPBuffer.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'SharedKESTop' (15#1) [d:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.srcs/sources_1/bd/sys_top/ipshared/d103/src/SharedKESTop.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'sys_top_bch_skes_256B_21B_13b_0_0' (16#1) [d:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.srcs/sources_1/bd/sys_top/ip/sys_top_bch_skes_256B_21B_13b_0_0_1/synth/sys_top_bch_skes_256B_21B_13b_0_0.v:56]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1613.602 ; gain = 55.473
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 1613.602 ; gain = 55.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 1613.602 ; gain = 55.473
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1763.105 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1795.895 ; gain = 32.789
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:32 ; elapsed = 00:00:44 . Memory (MB): peak = 1795.895 ; gain = 237.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu17eg-ffvc1760-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:32 ; elapsed = 00:00:44 . Memory (MB): peak = 1795.895 ; gain = 237.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:44 . Memory (MB): peak = 1795.895 ; gain = 237.766
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'rCurState_reg' in module 'ChannelArbiter'
+INFO: [Synth 8-802] inferred FSM for state register 'r_cur_state_reg' in module 'd_SC_KES_buffer'
+INFO: [Synth 8-802] inferred FSM for state register 'r_cur_state_reg' in module 'd_KES_PE_DC_2MAXodr'
+INFO: [Synth 8-802] inferred FSM for state register 'r_cur_state_reg' in module 'd_KES_PE_DC_NMLodr'
+INFO: [Synth 8-802] inferred FSM for state register 'r_cur_state_reg' in module 'd_KES_PE_ELU_eMAXodr'
+INFO: [Synth 8-802] inferred FSM for state register 'r_cur_state_reg' in module 'd_KES_PE_ELU_NMLodr'
+INFO: [Synth 8-802] inferred FSM for state register 'r_cur_state_reg' in module 'd_KES_PE_ELU_sMINodr'
+INFO: [Synth 8-802] inferred FSM for state register 'r_cur_state_reg' in module 'd_KES_PE_ELU_MINodr'
+INFO: [Synth 8-802] inferred FSM for state register 'r_cur_state_reg' in module 'd_BCH_KES_top'
+INFO: [Synth 8-802] inferred FSM for state register 'r_cur_state_reg' in module 'd_KES_CS_buffer'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+              State_Idle |                            00001 |                            00001
+            State_Select |                            00010 |                            00010
+               State_Out |                            00100 |                            00100
+             State_Dummy |                            01000 |                            01000
+           State_Standby |                            10000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'rCurState_reg' in module 'ChannelArbiter'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+              State_Idle |                           000001 |                           000001
+             State_Input |                           000010 |                           000010
+     State_FowardStandby |                           010000 |                           010000
+           State_Standby |                           001000 |                           001000
+            State_Output |                           100000 |                           100000
+             State_Shift |                           000100 |                           000100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'r_cur_state_reg' in module 'd_SC_KES_buffer'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               PE_DC_RST |                               01 |                               01
+               PE_DC_INP |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'r_cur_state_reg' in module 'd_KES_PE_DC_2MAXodr'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               PE_DC_RST |                               01 |                               01
+               PE_DC_INP |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'r_cur_state_reg' in module 'd_KES_PE_DC_NMLodr'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+              PE_ELU_RST |                               01 |                               01
+              PE_ELU_OUT |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'r_cur_state_reg' in module 'd_KES_PE_ELU_eMAXodr'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+              PE_ELU_RST |                               01 |                               01
+              PE_ELU_OUT |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'r_cur_state_reg' in module 'd_KES_PE_ELU_NMLodr'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+              PE_ELU_RST |                               01 |                               01
+              PE_ELU_OUT |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'r_cur_state_reg' in module 'd_KES_PE_ELU_sMINodr'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+              PE_ELU_RST |                               01 |                               01
+              PE_ELU_OUT |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'r_cur_state_reg' in module 'd_KES_PE_ELU_MINodr'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               KES_RESET |                          0000001 |                          0000001
+               KES_START |                          0000010 |                          0000010
+                 KES_FWD |                          0010000 |                          0010000
+               KES_STEP1 |                          0000100 |                          0000100
+               KES_STEP2 |                          0001000 |                          0001000
+               KES_PAUSE |                          0100000 |                          0100000
+                 KES_OUT |                          1000000 |                          1000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'r_cur_state_reg' in module 'd_BCH_KES_top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              State_Idle |                              000 |                             0000
+             State_Input |                              001 |                             0001
+           State_Standby |                              010 |                             0010
+         State_Out_Ready |                              011 |                             0100
+            State_Output |                              100 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_cur_state_reg' using encoding 'sequential' in module 'd_KES_CS_buffer'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:34 ; elapsed = 00:00:48 . Memory (MB): peak = 1795.895 ; gain = 237.766
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 4     
++---XORs : 
+	   2 Input     12 Bit         XORs := 15    
+	  15 Input     12 Bit         XORs := 1     
+	   3 Input      5 Bit         XORs := 92    
+	   2 Input      1 Bit         XORs := 828   
+	   3 Input      1 Bit         XORs := 460   
+	   4 Input      1 Bit         XORs := 644   
+	   5 Input      1 Bit         XORs := 460   
+	   6 Input      1 Bit         XORs := 230   
+	   7 Input      1 Bit         XORs := 46    
++---Registers : 
+	              360 Bit    Registers := 4     
+	              336 Bit    Registers := 1     
+	              324 Bit    Registers := 4     
+	               24 Bit    Registers := 168   
+	               18 Bit    Registers := 8     
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 63    
+	                4 Bit    Registers := 10    
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 21    
+	                1 Bit    Registers := 52    
++---Muxes : 
+	   8 Input    336 Bit        Muxes := 1     
+	   4 Input    324 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 288   
+	   4 Input     24 Bit        Muxes := 108   
+	   5 Input     24 Bit        Muxes := 4     
+	   5 Input     18 Bit        Muxes := 4     
+	   2 Input     18 Bit        Muxes := 12    
+	   8 Input     16 Bit        Muxes := 1     
+	   3 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 14    
+	   8 Input     12 Bit        Muxes := 3     
+	   2 Input      7 Bit        Muxes := 14    
+	   3 Input      7 Bit        Muxes := 3     
+	   8 Input      7 Bit        Muxes := 4     
+	   2 Input      6 Bit        Muxes := 44    
+	   4 Input      6 Bit        Muxes := 12    
+	   7 Input      6 Bit        Muxes := 16    
+	   2 Input      5 Bit        Muxes := 18    
+	   6 Input      5 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 11    
+	   3 Input      4 Bit        Muxes := 1     
+	  15 Input      4 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+	  16 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 4     
+	   2 Input      3 Bit        Muxes := 20    
+	   4 Input      3 Bit        Muxes := 4     
+	   3 Input      3 Bit        Muxes := 4     
+	  11 Input      3 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 133   
+	  20 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 4     
+	   3 Input      2 Bit        Muxes := 62    
+	   2 Input      1 Bit        Muxes := 77    
+	   5 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 57    
+	   6 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 14    
+	   8 Input      1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ChannelArbiter 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 5     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 6     
+	   6 Input      5 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 7     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	  20 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+	   5 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 3     
+Module d_SC_KES_buffer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	              324 Bit    Registers := 1     
+	               24 Bit    Registers := 27    
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 27    
+	   4 Input     24 Bit        Muxes := 27    
+	   2 Input      6 Bit        Muxes := 11    
+	   4 Input      6 Bit        Muxes := 3     
+	   7 Input      6 Bit        Muxes := 4     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 5     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+	   4 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module InterChannelSyndromeBuffer 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   4 Input    324 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+Module d_partial_FFM_gate_6b 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
+	   3 Input      1 Bit         XORs := 2     
+	   4 Input      1 Bit         XORs := 2     
+	   5 Input      1 Bit         XORs := 2     
+	   6 Input      1 Bit         XORs := 1     
+Module d_parallel_FFM_gate_GF12 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      5 Bit         XORs := 2     
+	   2 Input      1 Bit         XORs := 10    
+	   3 Input      1 Bit         XORs := 2     
+	   4 Input      1 Bit         XORs := 6     
+	   7 Input      1 Bit         XORs := 1     
+	   5 Input      1 Bit         XORs := 2     
+	   6 Input      1 Bit         XORs := 1     
+Module d_KES_PE_DC_2MAXodr 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module d_KES_PE_DC_NMLodr 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module d_KES_PE_ELU_eMAXodr 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     12 Bit         XORs := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     12 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 2     
+Module d_KES_PE_ELU_NMLodr 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     12 Bit         XORs := 1     
++---Registers : 
+	               12 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 2     
+Module d_KES_PE_ELU_sMINodr 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     12 Bit         XORs := 1     
++---Registers : 
+	               12 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 2     
+Module d_KES_PE_ELU_MINodr 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module d_BCH_KES_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	  15 Input     12 Bit         XORs := 1     
++---Registers : 
+	              336 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	                4 Bit    Registers := 4     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   8 Input    336 Bit        Muxes := 1     
+	   8 Input     16 Bit        Muxes := 1     
+	   8 Input     12 Bit        Muxes := 3     
+	   2 Input      7 Bit        Muxes := 14    
+	   3 Input      7 Bit        Muxes := 3     
+	   8 Input      7 Bit        Muxes := 4     
+	   2 Input      5 Bit        Muxes := 4     
+	  15 Input      4 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+	  16 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 6     
+	   8 Input      1 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 2     
+Module d_KES_CS_buffer 
+Detailed RTL Component Info : 
++---Registers : 
+	              360 Bit    Registers := 1     
+	               24 Bit    Registers := 15    
+	               18 Bit    Registers := 2     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   5 Input     24 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 45    
+	   5 Input     18 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 11    
+	   2 Input      1 Bit        Muxes := 7     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1590 (col length:264)
+BRAMs: 1592 (col length: RAMB18 264 RAMB36 132)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderKES/ELU_000/o_k_2i_X_reg[4]' (FDRE) to 'inst/PageDecoderKES/ELU_000/o_k_2i_X_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderKES/ELU_000/o_k_2i_X_reg[3]' (FDRE) to 'inst/PageDecoderKES/ELU_000/o_k_2i_X_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderKES/ELU_000/o_k_2i_X_reg[2]' (FDRE) to 'inst/PageDecoderKES/ELU_000/o_k_2i_X_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderKES/ELU_000/o_k_2i_X_reg[1]' (FDRE) to 'inst/PageDecoderKES/ELU_000/o_k_2i_X_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderKES/ELU_000/o_k_2i_X_reg[5]' (FDRE) to 'inst/PageDecoderKES/ELU_000/o_k_2i_X_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderKES/ELU_000/o_k_2i_X_reg[8]' (FDRE) to 'inst/PageDecoderKES/ELU_000/o_k_2i_X_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderKES/ELU_000/o_k_2i_X_reg[7]' (FDRE) to 'inst/PageDecoderKES/ELU_000/o_k_2i_X_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderKES/ELU_000/o_k_2i_X_reg[6]' (FDRE) to 'inst/PageDecoderKES/ELU_000/o_k_2i_X_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderKES/ELU_000/o_k_2i_X_reg[10]' (FDRE) to 'inst/PageDecoderKES/ELU_000/o_k_2i_X_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderKES/ELU_000/o_k_2i_X_reg[9]' (FDRE) to 'inst/PageDecoderKES/ELU_000/o_k_2i_X_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/PageDecoderKES /ELU_000/\o_k_2i_X_reg[11] )
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[3].Inst_PageDecoderCSBuffer/r_error_count_reg[4]' (FDRE) to 'inst/PageDecoderELPBuffer/genblk1[3].Inst_PageDecoderCSBuffer/r_error_count_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[3].Inst_PageDecoderCSBuffer/r_error_count_reg[5]' (FDRE) to 'inst/PageDecoderELPBuffer/genblk1[3].Inst_PageDecoderCSBuffer/r_error_count_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[3].Inst_PageDecoderCSBuffer/r_error_count_reg[6]' (FDRE) to 'inst/PageDecoderELPBuffer/genblk1[3].Inst_PageDecoderCSBuffer/r_error_count_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[3].Inst_PageDecoderCSBuffer/r_error_count_reg[7]' (FDRE) to 'inst/PageDecoderELPBuffer/genblk1[3].Inst_PageDecoderCSBuffer/r_error_count_reg[8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/PageDecoderELPBuffer/genblk1[3].Inst_PageDecoderCSBuffer/r_error_count_reg[8] )
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[3].Inst_PageDecoderCSBuffer/r_error_count_reg[13]' (FDRE) to 'inst/PageDecoderELPBuffer/genblk1[3].Inst_PageDecoderCSBuffer/r_error_count_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[3].Inst_PageDecoderCSBuffer/r_error_count_reg[14]' (FDRE) to 'inst/PageDecoderELPBuffer/genblk1[3].Inst_PageDecoderCSBuffer/r_error_count_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[3].Inst_PageDecoderCSBuffer/r_error_count_reg[15]' (FDRE) to 'inst/PageDecoderELPBuffer/genblk1[3].Inst_PageDecoderCSBuffer/r_error_count_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[3].Inst_PageDecoderCSBuffer/r_error_count_reg[16]' (FDRE) to 'inst/PageDecoderELPBuffer/genblk1[3].Inst_PageDecoderCSBuffer/r_error_count_reg[17]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/PageDecoderELPBuffer/genblk1[3].Inst_PageDecoderCSBuffer/r_error_count_reg[17] )
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[2].Inst_PageDecoderCSBuffer/r_error_count_reg[4]' (FDRE) to 'inst/PageDecoderELPBuffer/genblk1[2].Inst_PageDecoderCSBuffer/r_error_count_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[2].Inst_PageDecoderCSBuffer/r_error_count_reg[5]' (FDRE) to 'inst/PageDecoderELPBuffer/genblk1[2].Inst_PageDecoderCSBuffer/r_error_count_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[2].Inst_PageDecoderCSBuffer/r_error_count_reg[6]' (FDRE) to 'inst/PageDecoderELPBuffer/genblk1[2].Inst_PageDecoderCSBuffer/r_error_count_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[2].Inst_PageDecoderCSBuffer/r_error_count_reg[7]' (FDRE) to 'inst/PageDecoderELPBuffer/genblk1[2].Inst_PageDecoderCSBuffer/r_error_count_reg[8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/PageDecoderELPBuffer/genblk1[2].Inst_PageDecoderCSBuffer/r_error_count_reg[8] )
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[2].Inst_PageDecoderCSBuffer/r_error_count_reg[13]' (FDRE) to 'inst/PageDecoderELPBuffer/genblk1[2].Inst_PageDecoderCSBuffer/r_error_count_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[2].Inst_PageDecoderCSBuffer/r_error_count_reg[14]' (FDRE) to 'inst/PageDecoderELPBuffer/genblk1[2].Inst_PageDecoderCSBuffer/r_error_count_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[2].Inst_PageDecoderCSBuffer/r_error_count_reg[15]' (FDRE) to 'inst/PageDecoderELPBuffer/genblk1[2].Inst_PageDecoderCSBuffer/r_error_count_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[2].Inst_PageDecoderCSBuffer/r_error_count_reg[16]' (FDRE) to 'inst/PageDecoderELPBuffer/genblk1[2].Inst_PageDecoderCSBuffer/r_error_count_reg[17]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/PageDecoderELPBuffer/genblk1[2].Inst_PageDecoderCSBuffer/r_error_count_reg[17] )
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[1].Inst_PageDecoderCSBuffer/r_error_count_reg[4]' (FDRE) to 'inst/PageDecoderELPBuffer/genblk1[1].Inst_PageDecoderCSBuffer/r_error_count_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[1].Inst_PageDecoderCSBuffer/r_error_count_reg[5]' (FDRE) to 'inst/PageDecoderELPBuffer/genblk1[1].Inst_PageDecoderCSBuffer/r_error_count_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[1].Inst_PageDecoderCSBuffer/r_error_count_reg[6]' (FDRE) to 'inst/PageDecoderELPBuffer/genblk1[1].Inst_PageDecoderCSBuffer/r_error_count_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[1].Inst_PageDecoderCSBuffer/r_error_count_reg[7]' (FDRE) to 'inst/PageDecoderELPBuffer/genblk1[1].Inst_PageDecoderCSBuffer/r_error_count_reg[8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/PageDecoderELPBuffer/genblk1[1].Inst_PageDecoderCSBuffer/r_error_count_reg[8] )
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[1].Inst_PageDecoderCSBuffer/r_error_count_reg[13]' (FDRE) to 'inst/PageDecoderELPBuffer/genblk1[1].Inst_PageDecoderCSBuffer/r_error_count_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[1].Inst_PageDecoderCSBuffer/r_error_count_reg[14]' (FDRE) to 'inst/PageDecoderELPBuffer/genblk1[1].Inst_PageDecoderCSBuffer/r_error_count_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[1].Inst_PageDecoderCSBuffer/r_error_count_reg[15]' (FDRE) to 'inst/PageDecoderELPBuffer/genblk1[1].Inst_PageDecoderCSBuffer/r_error_count_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[1].Inst_PageDecoderCSBuffer/r_error_count_reg[16]' (FDRE) to 'inst/PageDecoderELPBuffer/genblk1[1].Inst_PageDecoderCSBuffer/r_error_count_reg[17]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/PageDecoderELPBuffer/genblk1[1].Inst_PageDecoderCSBuffer/r_error_count_reg[17] )
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[0].Inst_PageDecoderCSBuffer/r_error_count_reg[4]' (FDRE) to 'inst/PageDecoderELPBuffer/genblk1[0].Inst_PageDecoderCSBuffer/r_error_count_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[0].Inst_PageDecoderCSBuffer/r_error_count_reg[5]' (FDRE) to 'inst/PageDecoderELPBuffer/genblk1[0].Inst_PageDecoderCSBuffer/r_error_count_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[0].Inst_PageDecoderCSBuffer/r_error_count_reg[6]' (FDRE) to 'inst/PageDecoderELPBuffer/genblk1[0].Inst_PageDecoderCSBuffer/r_error_count_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[0].Inst_PageDecoderCSBuffer/r_error_count_reg[7]' (FDRE) to 'inst/PageDecoderELPBuffer/genblk1[0].Inst_PageDecoderCSBuffer/r_error_count_reg[8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/PageDecoderELPBuffer/genblk1[0].Inst_PageDecoderCSBuffer/r_error_count_reg[8] )
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[0].Inst_PageDecoderCSBuffer/r_error_count_reg[13]' (FDRE) to 'inst/PageDecoderELPBuffer/genblk1[0].Inst_PageDecoderCSBuffer/r_error_count_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[0].Inst_PageDecoderCSBuffer/r_error_count_reg[14]' (FDRE) to 'inst/PageDecoderELPBuffer/genblk1[0].Inst_PageDecoderCSBuffer/r_error_count_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[0].Inst_PageDecoderCSBuffer/r_error_count_reg[15]' (FDRE) to 'inst/PageDecoderELPBuffer/genblk1[0].Inst_PageDecoderCSBuffer/r_error_count_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[0].Inst_PageDecoderCSBuffer/r_error_count_reg[16]' (FDRE) to 'inst/PageDecoderELPBuffer/genblk1[0].Inst_PageDecoderCSBuffer/r_error_count_reg[17]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/PageDecoderELPBuffer/genblk1[0].Inst_PageDecoderCSBuffer/r_error_count_reg[17] )
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[3].Inst_PageDecoderCSBuffer/o_error_count_reg[4]' (FDR) to 'inst/PageDecoderELPBuffer/genblk1[3].Inst_PageDecoderCSBuffer/o_error_count_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[3].Inst_PageDecoderCSBuffer/o_error_count_reg[5]' (FDR) to 'inst/PageDecoderELPBuffer/genblk1[3].Inst_PageDecoderCSBuffer/o_error_count_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[3].Inst_PageDecoderCSBuffer/o_error_count_reg[6]' (FDR) to 'inst/PageDecoderELPBuffer/genblk1[3].Inst_PageDecoderCSBuffer/o_error_count_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[3].Inst_PageDecoderCSBuffer/o_error_count_reg[7]' (FDR) to 'inst/PageDecoderELPBuffer/genblk1[3].Inst_PageDecoderCSBuffer/o_error_count_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[3].Inst_PageDecoderCSBuffer/o_error_count_reg[8]' (FDR) to 'inst/PageDecoderELPBuffer/genblk1[3].Inst_PageDecoderCSBuffer/o_error_count_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[3].Inst_PageDecoderCSBuffer/o_error_count_reg[13]' (FDR) to 'inst/PageDecoderELPBuffer/genblk1[3].Inst_PageDecoderCSBuffer/o_error_count_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[3].Inst_PageDecoderCSBuffer/o_error_count_reg[14]' (FDR) to 'inst/PageDecoderELPBuffer/genblk1[3].Inst_PageDecoderCSBuffer/o_error_count_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[3].Inst_PageDecoderCSBuffer/o_error_count_reg[15]' (FDR) to 'inst/PageDecoderELPBuffer/genblk1[3].Inst_PageDecoderCSBuffer/o_error_count_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[3].Inst_PageDecoderCSBuffer/o_error_count_reg[16]' (FDR) to 'inst/PageDecoderELPBuffer/genblk1[3].Inst_PageDecoderCSBuffer/o_error_count_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[2].Inst_PageDecoderCSBuffer/o_error_count_reg[4]' (FDR) to 'inst/PageDecoderELPBuffer/genblk1[2].Inst_PageDecoderCSBuffer/o_error_count_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[2].Inst_PageDecoderCSBuffer/o_error_count_reg[5]' (FDR) to 'inst/PageDecoderELPBuffer/genblk1[2].Inst_PageDecoderCSBuffer/o_error_count_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[2].Inst_PageDecoderCSBuffer/o_error_count_reg[6]' (FDR) to 'inst/PageDecoderELPBuffer/genblk1[2].Inst_PageDecoderCSBuffer/o_error_count_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[2].Inst_PageDecoderCSBuffer/o_error_count_reg[7]' (FDR) to 'inst/PageDecoderELPBuffer/genblk1[2].Inst_PageDecoderCSBuffer/o_error_count_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[2].Inst_PageDecoderCSBuffer/o_error_count_reg[8]' (FDR) to 'inst/PageDecoderELPBuffer/genblk1[2].Inst_PageDecoderCSBuffer/o_error_count_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[2].Inst_PageDecoderCSBuffer/o_error_count_reg[13]' (FDR) to 'inst/PageDecoderELPBuffer/genblk1[2].Inst_PageDecoderCSBuffer/o_error_count_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[2].Inst_PageDecoderCSBuffer/o_error_count_reg[14]' (FDR) to 'inst/PageDecoderELPBuffer/genblk1[2].Inst_PageDecoderCSBuffer/o_error_count_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[2].Inst_PageDecoderCSBuffer/o_error_count_reg[15]' (FDR) to 'inst/PageDecoderELPBuffer/genblk1[2].Inst_PageDecoderCSBuffer/o_error_count_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[2].Inst_PageDecoderCSBuffer/o_error_count_reg[16]' (FDR) to 'inst/PageDecoderELPBuffer/genblk1[2].Inst_PageDecoderCSBuffer/o_error_count_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[1].Inst_PageDecoderCSBuffer/o_error_count_reg[4]' (FDR) to 'inst/PageDecoderELPBuffer/genblk1[1].Inst_PageDecoderCSBuffer/o_error_count_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[1].Inst_PageDecoderCSBuffer/o_error_count_reg[5]' (FDR) to 'inst/PageDecoderELPBuffer/genblk1[1].Inst_PageDecoderCSBuffer/o_error_count_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[1].Inst_PageDecoderCSBuffer/o_error_count_reg[6]' (FDR) to 'inst/PageDecoderELPBuffer/genblk1[1].Inst_PageDecoderCSBuffer/o_error_count_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[1].Inst_PageDecoderCSBuffer/o_error_count_reg[7]' (FDR) to 'inst/PageDecoderELPBuffer/genblk1[1].Inst_PageDecoderCSBuffer/o_error_count_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[1].Inst_PageDecoderCSBuffer/o_error_count_reg[8]' (FDR) to 'inst/PageDecoderELPBuffer/genblk1[1].Inst_PageDecoderCSBuffer/o_error_count_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[1].Inst_PageDecoderCSBuffer/o_error_count_reg[13]' (FDR) to 'inst/PageDecoderELPBuffer/genblk1[1].Inst_PageDecoderCSBuffer/o_error_count_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[1].Inst_PageDecoderCSBuffer/o_error_count_reg[14]' (FDR) to 'inst/PageDecoderELPBuffer/genblk1[1].Inst_PageDecoderCSBuffer/o_error_count_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[1].Inst_PageDecoderCSBuffer/o_error_count_reg[15]' (FDR) to 'inst/PageDecoderELPBuffer/genblk1[1].Inst_PageDecoderCSBuffer/o_error_count_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[1].Inst_PageDecoderCSBuffer/o_error_count_reg[16]' (FDR) to 'inst/PageDecoderELPBuffer/genblk1[1].Inst_PageDecoderCSBuffer/o_error_count_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[0].Inst_PageDecoderCSBuffer/o_error_count_reg[4]' (FDR) to 'inst/PageDecoderELPBuffer/genblk1[0].Inst_PageDecoderCSBuffer/o_error_count_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[0].Inst_PageDecoderCSBuffer/o_error_count_reg[5]' (FDR) to 'inst/PageDecoderELPBuffer/genblk1[0].Inst_PageDecoderCSBuffer/o_error_count_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[0].Inst_PageDecoderCSBuffer/o_error_count_reg[6]' (FDR) to 'inst/PageDecoderELPBuffer/genblk1[0].Inst_PageDecoderCSBuffer/o_error_count_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[0].Inst_PageDecoderCSBuffer/o_error_count_reg[7]' (FDR) to 'inst/PageDecoderELPBuffer/genblk1[0].Inst_PageDecoderCSBuffer/o_error_count_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[0].Inst_PageDecoderCSBuffer/o_error_count_reg[8]' (FDR) to 'inst/PageDecoderELPBuffer/genblk1[0].Inst_PageDecoderCSBuffer/o_error_count_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[0].Inst_PageDecoderCSBuffer/o_error_count_reg[13]' (FDR) to 'inst/PageDecoderELPBuffer/genblk1[0].Inst_PageDecoderCSBuffer/o_error_count_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[0].Inst_PageDecoderCSBuffer/o_error_count_reg[14]' (FDR) to 'inst/PageDecoderELPBuffer/genblk1[0].Inst_PageDecoderCSBuffer/o_error_count_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[0].Inst_PageDecoderCSBuffer/o_error_count_reg[15]' (FDR) to 'inst/PageDecoderELPBuffer/genblk1[0].Inst_PageDecoderCSBuffer/o_error_count_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[0].Inst_PageDecoderCSBuffer/o_error_count_reg[16]' (FDR) to 'inst/PageDecoderELPBuffer/genblk1[0].Inst_PageDecoderCSBuffer/o_error_count_reg[17]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:12 ; elapsed = 00:06:17 . Memory (MB): peak = 1842.188 ; gain = 284.059
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:34 ; elapsed = 00:06:53 . Memory (MB): peak = 2384.180 ; gain = 826.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:04:52 ; elapsed = 00:07:17 . Memory (MB): peak = 2402.746 ; gain = 844.617
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[3].Inst_PageDecoderCSBuffer/FSM_sequential_r_cur_state_reg[2]' (FDR) to 'inst/PageDecoderELPBuffer/genblk1[3].Inst_PageDecoderCSBuffer/o_exe_cs_reg'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[2].Inst_PageDecoderCSBuffer/FSM_sequential_r_cur_state_reg[2]' (FDR) to 'inst/PageDecoderELPBuffer/genblk1[2].Inst_PageDecoderCSBuffer/o_exe_cs_reg'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[1].Inst_PageDecoderCSBuffer/FSM_sequential_r_cur_state_reg[2]' (FDR) to 'inst/PageDecoderELPBuffer/genblk1[1].Inst_PageDecoderCSBuffer/o_exe_cs_reg'
+INFO: [Synth 8-3886] merging instance 'inst/PageDecoderELPBuffer/genblk1[0].Inst_PageDecoderCSBuffer/FSM_sequential_r_cur_state_reg[2]' (FDR) to 'inst/PageDecoderELPBuffer/genblk1[0].Inst_PageDecoderCSBuffer/o_exe_cs_reg'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:05:17 ; elapsed = 00:07:55 . Memory (MB): peak = 2562.020 ; gain = 1003.891
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:05:24 ; elapsed = 00:08:04 . Memory (MB): peak = 2566.637 ; gain = 1008.508
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:05:24 ; elapsed = 00:08:04 . Memory (MB): peak = 2566.637 ; gain = 1008.508
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:26 ; elapsed = 00:08:07 . Memory (MB): peak = 2566.637 ; gain = 1008.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:05:26 ; elapsed = 00:08:07 . Memory (MB): peak = 2566.637 ; gain = 1008.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:05:30 ; elapsed = 00:08:13 . Memory (MB): peak = 2566.637 ; gain = 1008.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:05:30 ; elapsed = 00:08:13 . Memory (MB): peak = 2566.637 ; gain = 1008.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     4|
+|2     |LUT2 |  2241|
+|3     |LUT3 |   348|
+|4     |LUT4 |  3950|
+|5     |LUT5 |   942|
+|6     |LUT6 |  1390|
+|7     |FDRE |  8151|
+|8     |FDSE |    45|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------------------------------------------+---------------------------+------+
+|      |Instance                                     |Module                     |Cells |
++------+---------------------------------------------+---------------------------+------+
+|1     |top                                          |                           | 17071|
+|2     |  inst                                       |SharedKESTop               | 17071|
+|3     |    PageDecoderELPBuffer                     |InterChannelELPBuffer      |  3022|
+|4     |      \genblk1[0].Inst_PageDecoderCSBuffer   |d_KES_CS_buffer            |   755|
+|5     |      \genblk1[1].Inst_PageDecoderCSBuffer   |d_KES_CS_buffer_28         |   755|
+|6     |      \genblk1[2].Inst_PageDecoderCSBuffer   |d_KES_CS_buffer_29         |   755|
+|7     |      \genblk1[3].Inst_PageDecoderCSBuffer   |d_KES_CS_buffer_30         |   756|
+|8     |    PageDecoderKES                           |d_BCH_KES_top              |  6987|
+|9     |      DC_000                                 |d_KES_PE_DC_NMLodr         |   130|
+|10    |      DC_001                                 |d_KES_PE_DC_NMLodr_3       |   123|
+|11    |      DC_002                                 |d_KES_PE_DC_NMLodr_4       |   128|
+|12    |      DC_003                                 |d_KES_PE_DC_NMLodr_5       |   125|
+|13    |      DC_004                                 |d_KES_PE_DC_NMLodr_6       |   128|
+|14    |      DC_005                                 |d_KES_PE_DC_NMLodr_7       |   122|
+|15    |      DC_006                                 |d_KES_PE_DC_NMLodr_8       |   134|
+|16    |      DC_007                                 |d_KES_PE_DC_NMLodr_9       |   126|
+|17    |      DC_008                                 |d_KES_PE_DC_NMLodr_10      |   127|
+|18    |      DC_009                                 |d_KES_PE_DC_NMLodr_11      |   134|
+|19    |      DC_010                                 |d_KES_PE_DC_NMLodr_12      |   131|
+|20    |      DC_011                                 |d_KES_PE_DC_NMLodr_13      |   130|
+|21    |      DC_012                                 |d_KES_PE_DC_NMLodr_14      |   182|
+|22    |      DC_013                                 |d_KES_PE_DC_2MAXodr        |   178|
+|23    |      DC_014                                 |d_KES_PE_DC_2MAXodr_15     |   131|
+|24    |      ELU_000                                |d_KES_PE_ELU_MINodr        |   159|
+|25    |      ELU_001                                |d_KES_PE_ELU_sMINodr       |   294|
+|26    |      ELU_002                                |d_KES_PE_ELU_NMLodr        |   259|
+|27    |      ELU_003                                |d_KES_PE_ELU_NMLodr_16     |   270|
+|28    |      ELU_004                                |d_KES_PE_ELU_NMLodr_17     |   272|
+|29    |      ELU_005                                |d_KES_PE_ELU_NMLodr_18     |   270|
+|30    |      ELU_006                                |d_KES_PE_ELU_NMLodr_19     |   273|
+|31    |      ELU_007                                |d_KES_PE_ELU_NMLodr_20     |   270|
+|32    |      ELU_008                                |d_KES_PE_ELU_NMLodr_21     |   271|
+|33    |      ELU_009                                |d_KES_PE_ELU_NMLodr_22     |   274|
+|34    |      ELU_010                                |d_KES_PE_ELU_NMLodr_23     |   271|
+|35    |      ELU_011                                |d_KES_PE_ELU_NMLodr_24     |   270|
+|36    |      ELU_012                                |d_KES_PE_ELU_NMLodr_25     |   270|
+|37    |      ELU_013                                |d_KES_PE_ELU_NMLodr_26     |   273|
+|38    |      ELU_014                                |d_KES_PE_ELU_NMLodr_27     |   276|
+|39    |      ELU_015                                |d_KES_PE_ELU_eMAXodr       |    93|
+|40    |    PageDecoderSyndromeBuffer                |InterChannelSyndromeBuffer |  7061|
+|41    |      Inst_ChannelSelector                   |ChannelArbiter             |   412|
+|42    |      \genblk1[0].PageDecoderSyndromeBuffer  |d_SC_KES_buffer            |  1662|
+|43    |      \genblk1[1].PageDecoderSyndromeBuffer  |d_SC_KES_buffer_0          |  1661|
+|44    |      \genblk1[2].PageDecoderSyndromeBuffer  |d_SC_KES_buffer_1          |  1661|
+|45    |      \genblk1[3].PageDecoderSyndromeBuffer  |d_SC_KES_buffer_2          |  1661|
++------+---------------------------------------------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:05:30 ; elapsed = 00:08:13 . Memory (MB): peak = 2566.637 ; gain = 1008.508
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:05:05 ; elapsed = 00:07:54 . Memory (MB): peak = 2566.637 ; gain = 826.215
+Synthesis Optimization Complete : Time (s): cpu = 00:05:30 ; elapsed = 00:08:13 . Memory (MB): peak = 2566.637 ; gain = 1008.508
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2597.559 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+158 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:05:55 ; elapsed = 00:08:55 . Memory (MB): peak = 2597.559 ; gain = 2199.508
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2597.559 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.runs/sys_top_bch_skes_256B_21B_13b_0_0_synth_1/sys_top_bch_skes_256B_21B_13b_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2597.559 ; gain = 0.000
+write_vhdl: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2597.559 ; gain = 0.000
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP sys_top_bch_skes_256B_21B_13b_0_0, cache-ID = b917932329a902cb
+INFO: [Coretcl 2-1174] Renamed 44 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2597.559 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.runs/sys_top_bch_skes_256B_21B_13b_0_0_synth_1/sys_top_bch_skes_256B_21B_13b_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2597.559 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file sys_top_bch_skes_256B_21B_13b_0_0_utilization_synth.rpt -pb sys_top_bch_skes_256B_21B_13b_0_0_utilization_synth.pb
+write_vhdl: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2597.559 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun May 14 14:07:04 2023...

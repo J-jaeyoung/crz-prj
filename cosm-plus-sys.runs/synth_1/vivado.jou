@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue May 16 20:08:07 2023
+# Process ID: 92100
+# Current directory: D:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.runs/synth_1
+# Command line: vivado.exe -log sys_top_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sys_top_wrapper.tcl
+# Log file: D:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.runs/synth_1/sys_top_wrapper.vds
+# Journal file: D:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source sys_top_wrapper.tcl -notrace

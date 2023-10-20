@@ -1,0 +1,20 @@
+
+*** Running vivado
+    with args -log sys_top_axi_bram_ctrl_3_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source sys_top_axi_bram_ctrl_3_0.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source sys_top_axi_bram_ctrl_3_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 352.707 ; gain = 60.090
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.ipdefs/ip-repo_0_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 394.012 ; gain = 41.305
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is d:/sources/DaisyPlus/NAND/Micron/OpenSSD/512bit/daisyplus_openssd_micron_4c2w/cosm-plus-sys/cosm-plus-sys.cache/ip 
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP sys_top_axi_bram_ctrl_3_0, cache-ID = 99651761bfa6a918.
+INFO: [Common 17-206] Exiting Vivado at Sun May 14 13:57:37 2023...
