@@ -1,0 +1,649 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Thu Dec 21 14:20:24 2023
+| Host         : Guardian running 64-bit major release  (build 9200)
+| Command      : report_drc -file sys_top_wrapper_drc_opted.rpt -pb sys_top_wrapper_drc_opted.pb -rpx sys_top_wrapper_drc_opted.rpx
+| Design       : sys_top_wrapper
+| Device       : xczu17eg-ffvc1760-2-e
+| Speed File   : -2
+| Design State : Synthesized
+------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 122
++-----------+------------------+----------------------------------------+------------+
+| Rule      | Severity         | Description                            | Violations |
++-----------+------------------+----------------------------------------+------------+
+| REQP-1741 | Error            | IDELAYE3 drives invalid load           | 4          |
+| ADEF-911  | Critical Warning | SIM_DEVICE_arch_mismatch               | 88         |
+| REQP-1857 | Advisory         | RAMB18E2_writefirst_collision_advisory | 4          |
+| REQP-1858 | Advisory         | RAMB36E2_writefirst_collision_advisory | 26         |
++-----------+------------------+----------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+REQP-1741#1 Error
+IDELAYE3 drives invalid load  
+IDELAYE3 sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/Inst_DQSIDELAY DATAOUT pin (net: sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/wDelayedDQS) may not drive a BUFG*.
+Related violations: <none>
+
+REQP-1741#2 Error
+IDELAYE3 drives invalid load  
+IDELAYE3 sys_top_i/v2nfc_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/Inst_DQSIDELAY DATAOUT pin (net: sys_top_i/v2nfc_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/wDelayedDQS) may not drive a BUFG*.
+Related violations: <none>
+
+REQP-1741#3 Error
+IDELAYE3 drives invalid load  
+IDELAYE3 sys_top_i/v2nfc_2/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/Inst_DQSIDELAY DATAOUT pin (net: sys_top_i/v2nfc_2/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/wDelayedDQS) may not drive a BUFG*.
+Related violations: <none>
+
+REQP-1741#4 Error
+IDELAYE3 drives invalid load  
+IDELAYE3 sys_top_i/v2nfc_3/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/Inst_DQSIDELAY DATAOUT pin (net: sys_top_i/v2nfc_3/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/wDelayedDQS) may not drive a BUFG*.
+Related violations: <none>
+
+ADEF-911#1 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/Inst_DQSIDELAYCTRL was changed from '7SERIES' to 'ULTRASCALE' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#2 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[0].Inst_CEOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#3 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[1].Inst_CEOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#4 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[2].Inst_CEOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#5 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[3].Inst_CEOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#6 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[4].Inst_CEOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#7 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[5].Inst_CEOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#8 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[6].Inst_CEOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#9 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[7].Inst_CEOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#10 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[0].Inst_DQOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#11 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[1].Inst_DQOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#12 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[2].Inst_DQOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#13 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[3].Inst_DQOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#14 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[4].Inst_DQOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#15 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[5].Inst_DQOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#16 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[6].Inst_DQOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#17 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[7].Inst_DQOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#18 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_ALEOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#19 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_CLEOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#20 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_DQSOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#21 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_REOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#22 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_WEOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#23 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/Inst_DQSIDELAYCTRL was changed from '7SERIES' to 'ULTRASCALE' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#24 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[0].Inst_CEOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#25 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[1].Inst_CEOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#26 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[2].Inst_CEOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#27 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[3].Inst_CEOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#28 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[4].Inst_CEOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#29 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[5].Inst_CEOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#30 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[6].Inst_CEOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#31 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[7].Inst_CEOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#32 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[0].Inst_DQOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#33 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[1].Inst_DQOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#34 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[2].Inst_DQOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#35 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[3].Inst_DQOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#36 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[4].Inst_DQOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#37 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[5].Inst_DQOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#38 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[6].Inst_DQOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#39 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[7].Inst_DQOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#40 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_ALEOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#41 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_CLEOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#42 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_DQSOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#43 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_REOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#44 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_WEOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#45 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_2/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/Inst_DQSIDELAYCTRL was changed from '7SERIES' to 'ULTRASCALE' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#46 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_2/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[0].Inst_CEOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#47 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_2/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[1].Inst_CEOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#48 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_2/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[2].Inst_CEOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#49 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_2/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[3].Inst_CEOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#50 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_2/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[4].Inst_CEOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#51 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_2/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[5].Inst_CEOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#52 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_2/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[6].Inst_CEOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#53 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_2/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[7].Inst_CEOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#54 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_2/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[0].Inst_DQOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#55 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_2/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[1].Inst_DQOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#56 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_2/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[2].Inst_DQOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#57 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_2/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[3].Inst_DQOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#58 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_2/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[4].Inst_DQOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#59 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_2/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[5].Inst_DQOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#60 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_2/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[6].Inst_DQOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#61 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_2/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[7].Inst_DQOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#62 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_2/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_ALEOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#63 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_2/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_CLEOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#64 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_2/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_DQSOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#65 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_2/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_REOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#66 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_2/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_WEOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#67 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_3/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/Inst_DQSIDELAYCTRL was changed from '7SERIES' to 'ULTRASCALE' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#68 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_3/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[0].Inst_CEOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#69 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_3/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[1].Inst_CEOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#70 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_3/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[2].Inst_CEOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#71 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_3/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[3].Inst_CEOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#72 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_3/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[4].Inst_CEOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#73 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_3/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[5].Inst_CEOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#74 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_3/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[6].Inst_CEOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#75 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_3/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[7].Inst_CEOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#76 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_3/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[0].Inst_DQOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#77 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_3/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[1].Inst_DQOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#78 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_3/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[2].Inst_DQOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#79 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_3/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[3].Inst_DQOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#80 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_3/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[4].Inst_DQOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#81 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_3/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[5].Inst_DQOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#82 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_3/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[6].Inst_DQOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#83 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_3/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[7].Inst_DQOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#84 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_3/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_ALEOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#85 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_3/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_CLEOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#86 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_3/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_DQSOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#87 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_3/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_REOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+ADEF-911#88 Critical Warning
+SIM_DEVICE_arch_mismatch  
+When the netlist was initialized, the value of SIM_DEVICE on cell sys_top_i/v2nfc_3/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_WEOSERDES was changed from 'ULTRASCALE' to 'ULTRASCALE_PLUS' to match the current FPGA architecture. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist.
+Related violations: <none>
+
+REQP-1857#1 Advisory
+RAMB18E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (sys_top_i/gpic_0/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1857#2 Advisory
+RAMB18E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (sys_top_i/gpic_0/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1857#3 Advisory
+RAMB18E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (sys_top_i/gpic_0_sub_0/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1857#4 Advisory
+RAMB18E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (sys_top_i/gpic_0_sub_0/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#1 Advisory
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (sys_top_i/gpic_0/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#2 Advisory
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (sys_top_i/gpic_0/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#3 Advisory
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (sys_top_i/gpic_0_sub_0/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#4 Advisory
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (sys_top_i/gpic_0_sub_0/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#5 Advisory
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (sys_top_i/nvme_ctrl_0/inst/pcie4_uscale_plus_0_i/inst/pcie_4_0_pipe_inst/pcie_4_0_bram_inst/RAM32K.bram_comp_inst/bram_16k_0_int/ECC_RAM.RAMB36E2[0].ramb36e2_inst) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#6 Advisory
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (sys_top_i/nvme_ctrl_0/inst/pcie4_uscale_plus_0_i/inst/pcie_4_0_pipe_inst/pcie_4_0_bram_inst/RAM32K.bram_comp_inst/bram_16k_0_int/ECC_RAM.RAMB36E2[1].ramb36e2_inst) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#7 Advisory
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (sys_top_i/nvme_ctrl_0/inst/pcie4_uscale_plus_0_i/inst/pcie_4_0_pipe_inst/pcie_4_0_bram_inst/RAM32K.bram_comp_inst/bram_16k_0_int/ECC_RAM.RAMB36E2[2].ramb36e2_inst) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#8 Advisory
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (sys_top_i/nvme_ctrl_0/inst/pcie4_uscale_plus_0_i/inst/pcie_4_0_pipe_inst/pcie_4_0_bram_inst/RAM32K.bram_comp_inst/bram_16k_0_int/ECC_RAM.RAMB36E2[3].ramb36e2_inst) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#9 Advisory
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (sys_top_i/nvme_ctrl_0/inst/pcie4_uscale_plus_0_i/inst/pcie_4_0_pipe_inst/pcie_4_0_bram_inst/RAM32K.bram_comp_inst/bram_16k_0_int/ECC_RAM.RAMB36E2[4].ramb36e2_inst) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#10 Advisory
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (sys_top_i/nvme_ctrl_0/inst/pcie4_uscale_plus_0_i/inst/pcie_4_0_pipe_inst/pcie_4_0_bram_inst/RAM32K.bram_comp_inst/bram_16k_0_int/ECC_RAM.RAMB36E2[5].ramb36e2_inst) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#11 Advisory
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (sys_top_i/nvme_ctrl_0/inst/pcie4_uscale_plus_0_i/inst/pcie_4_0_pipe_inst/pcie_4_0_bram_inst/RAM32K.bram_comp_inst/bram_16k_1_int/ECC_RAM.RAMB36E2[0].ramb36e2_inst) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#12 Advisory
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (sys_top_i/nvme_ctrl_0/inst/pcie4_uscale_plus_0_i/inst/pcie_4_0_pipe_inst/pcie_4_0_bram_inst/RAM32K.bram_comp_inst/bram_16k_1_int/ECC_RAM.RAMB36E2[1].ramb36e2_inst) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#13 Advisory
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (sys_top_i/nvme_ctrl_0/inst/pcie4_uscale_plus_0_i/inst/pcie_4_0_pipe_inst/pcie_4_0_bram_inst/RAM32K.bram_comp_inst/bram_16k_1_int/ECC_RAM.RAMB36E2[2].ramb36e2_inst) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#14 Advisory
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (sys_top_i/nvme_ctrl_0/inst/pcie4_uscale_plus_0_i/inst/pcie_4_0_pipe_inst/pcie_4_0_bram_inst/RAM32K.bram_comp_inst/bram_16k_1_int/ECC_RAM.RAMB36E2[3].ramb36e2_inst) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#15 Advisory
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (sys_top_i/nvme_ctrl_0/inst/pcie4_uscale_plus_0_i/inst/pcie_4_0_pipe_inst/pcie_4_0_bram_inst/RAM32K.bram_comp_inst/bram_16k_1_int/ECC_RAM.RAMB36E2[4].ramb36e2_inst) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#16 Advisory
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (sys_top_i/nvme_ctrl_0/inst/pcie4_uscale_plus_0_i/inst/pcie_4_0_pipe_inst/pcie_4_0_bram_inst/RAM32K.bram_comp_inst/bram_16k_1_int/ECC_RAM.RAMB36E2[5].ramb36e2_inst) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#17 Advisory
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (sys_top_i/nvme_ctrl_0/inst/pcie4_uscale_plus_0_i/inst/pcie_4_0_pipe_inst/pcie_4_0_bram_inst/bram_post_inst/bram_16k_int/ECC_RAM.RAMB36E2[0].ramb36e2_inst) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#18 Advisory
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (sys_top_i/nvme_ctrl_0/inst/pcie4_uscale_plus_0_i/inst/pcie_4_0_pipe_inst/pcie_4_0_bram_inst/bram_post_inst/bram_16k_int/ECC_RAM.RAMB36E2[1].ramb36e2_inst) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#19 Advisory
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (sys_top_i/nvme_ctrl_0/inst/pcie4_uscale_plus_0_i/inst/pcie_4_0_pipe_inst/pcie_4_0_bram_inst/bram_post_inst/bram_16k_int/ECC_RAM.RAMB36E2[2].ramb36e2_inst) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#20 Advisory
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (sys_top_i/nvme_ctrl_0/inst/pcie4_uscale_plus_0_i/inst/pcie_4_0_pipe_inst/pcie_4_0_bram_inst/bram_post_inst/bram_16k_int/ECC_RAM.RAMB36E2[3].ramb36e2_inst) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#21 Advisory
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (sys_top_i/nvme_ctrl_0/inst/pcie4_uscale_plus_0_i/inst/pcie_4_0_pipe_inst/pcie_4_0_bram_inst/bram_post_inst/bram_16k_int/ECC_RAM.RAMB36E2[4].ramb36e2_inst) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#22 Advisory
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (sys_top_i/nvme_ctrl_0/inst/pcie4_uscale_plus_0_i/inst/pcie_4_0_pipe_inst/pcie_4_0_bram_inst/bram_post_inst/bram_16k_int/ECC_RAM.RAMB36E2[5].ramb36e2_inst) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#23 Advisory
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (sys_top_i/nvme_ctrl_0/inst/pcie4_uscale_plus_0_i/inst/pcie_4_0_pipe_inst/pcie_4_0_bram_inst/bram_repl_inst/bram_rep_int_0/ECC_RAM.RAMB36E2[0].ramb36e2_inst) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#24 Advisory
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (sys_top_i/nvme_ctrl_0/inst/pcie4_uscale_plus_0_i/inst/pcie_4_0_pipe_inst/pcie_4_0_bram_inst/bram_repl_inst/bram_rep_int_0/ECC_RAM.RAMB36E2[1].ramb36e2_inst) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#25 Advisory
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (sys_top_i/nvme_ctrl_0/inst/pcie4_uscale_plus_0_i/inst/pcie_4_0_pipe_inst/pcie_4_0_bram_inst/bram_repl_inst/bram_rep_int_0/ECC_RAM.RAMB36E2[2].ramb36e2_inst) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#26 Advisory
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (sys_top_i/nvme_ctrl_0/inst/pcie4_uscale_plus_0_i/inst/pcie_4_0_pipe_inst/pcie_4_0_bram_inst/bram_repl_inst/bram_rep_int_0/ECC_RAM.RAMB36E2[3].ramb36e2_inst) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+

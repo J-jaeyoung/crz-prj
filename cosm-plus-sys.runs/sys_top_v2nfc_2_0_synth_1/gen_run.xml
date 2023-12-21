@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="sys_top_v2nfc_2_0_synth_1" LaunchPart="xczu17eg-ffvc1760-2-e" LaunchTime="1684039609">
+  <File Type="PA-TCL" Name="sys_top_v2nfc_2_0.tcl"/>
+  <File Type="REPORTS-TCL" Name="sys_top_v2nfc_2_0_reports.tcl"/>
+  <File Type="RDS-RDS" Name="sys_top_v2nfc_2_0.vds"/>
+  <File Type="RDS-UTIL" Name="sys_top_v2nfc_2_0_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="sys_top_v2nfc_2_0_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="sys_top_v2nfc_2_0.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/sys_top_v2nfc_2_0">
+    <File Path="$PSRCDIR/sources_1/bd/sys_top/ip/sys_top_v2nfc_2_0/sys_top_v2nfc_2_0.xci">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Projects/Project/cosm/prj/cosm-plus-sys-66/cosm-plus-sys.srcs/sources_1/bd/sys_top/ip/sys_top_v2nfc_2_0/sys_top_v2nfc_2_0.xci"/>
+        <Attr Name="ImportTime" Val="0"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="ProcessingOrder" Val="EARLY"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="sys_top_v2nfc_2_0"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/sys_top_v2nfc_2_0">
+    <File Path="$PSRCDIR/sources_1/bd/sys_top/ip/sys_top_v2nfc_2_0/sys_top_v2nfc_2_0.xci">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Projects/Project/cosm/prj/cosm-plus-sys-66/cosm-plus-sys.srcs/sources_1/bd/sys_top/ip/sys_top_v2nfc_2_0/sys_top_v2nfc_2_0.xci"/>
+        <Attr Name="ImportTime" Val="0"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="ProcessingOrder" Val="EARLY"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="sys_top_v2nfc_2_0"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/new/bit_fin.tcl">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Projects/Public/daisyplus_openssd_toshiba_19.1_lpddr4/cosm-plus-sys.srcs/impl_1/new/bit_fin.tcl"/>
+        <Attr Name="ImportTime" Val="1644994153"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="UsedInSteps" Val="impl_1;PLACE_DESIGN;TCL.PRE"/>
+        <Attr Name="UsedInSteps" Val="impl_1;WRITE_BITSTREAM;TCL.PRE"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
