@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="sys_top_v2nfc_0_0_synth_1" LaunchDir="C:/daisyplus_openssd_micron_4c2w_66.6mhz_from_50mhz_refined/cosm-plus-sys/cosm-plus-sys.runs/sys_top_v2nfc_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="sys_top_v2nfc_0_1_synth_1" LaunchDir="C:/daisyplus_openssd_micron_4c2w_66.6mhz_from_50mhz_refined/cosm-plus-sys/cosm-plus-sys.runs/sys_top_v2nfc_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="sys_top_v2nfc_0_2_synth_1" LaunchDir="C:/daisyplus_openssd_micron_4c2w_66.6mhz_from_50mhz_refined/cosm-plus-sys/cosm-plus-sys.runs/sys_top_v2nfc_0_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="sys_top_v2nfc_0_1_synth_1"/>
+	</Run>
+	<Run Id="sys_top_v2nfc_2_0_synth_1" LaunchDir="C:/daisyplus_openssd_micron_4c2w_66.6mhz_from_50mhz_refined/cosm-plus-sys/cosm-plus-sys.runs/sys_top_v2nfc_2_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="sys_top_v2nfc_0_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Dec 19 18:01:35 2023
+# Process ID: 14464
+# Current directory: C:/daisyplus_openssd_micron_4c2w_50mhz/cosm-plus-sys/cosm-plus-sys.runs/sys_top_proc_sys_reset_5_0_synth_1
+# Command line: vivado.exe -log sys_top_proc_sys_reset_5_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sys_top_proc_sys_reset_5_0.tcl
+# Log file: C:/daisyplus_openssd_micron_4c2w_50mhz/cosm-plus-sys/cosm-plus-sys.runs/sys_top_proc_sys_reset_5_0_synth_1/sys_top_proc_sys_reset_5_0.vds
+# Journal file: C:/daisyplus_openssd_micron_4c2w_50mhz/cosm-plus-sys/cosm-plus-sys.runs/sys_top_proc_sys_reset_5_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source sys_top_proc_sys_reset_5_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/daisyplus_openssd_micron_4c2w_50mhz/cosm-plus-sys/cosm-plus-sys.ipdefs/ip-repo_0_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP sys_top_proc_sys_reset_5_0, cache-ID = bdea814a1dd858b2.
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 19 18:01:44 2023...

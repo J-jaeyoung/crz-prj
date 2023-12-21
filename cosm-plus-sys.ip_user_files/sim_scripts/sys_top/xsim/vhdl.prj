@@ -1,0 +1,16 @@
+vhdl xil_defaultlib  \
+"../../../bd/sys_top/ip/sys_top_proc_sys_reset_0_0_1/sim/sys_top_proc_sys_reset_0_0.vhd" \
+"../../../bd/sys_top/ip/sys_top_proc_sys_reset_2_0/sim/sys_top_proc_sys_reset_2_0.vhd" \
+"../../../bd/sys_top/ip/sys_top_axi_bram_ctrl_0_0_1/sim/sys_top_axi_bram_ctrl_0_0.vhd" \
+"../../../bd/sys_top/ip/sys_top_axi_bram_ctrl_1_0_1/sim/sys_top_axi_bram_ctrl_1_0.vhd" \
+"../../../bd/sys_top/ip/sys_top_axi_bram_ctrl_2_0_1/sim/sys_top_axi_bram_ctrl_2_0.vhd" \
+"../../../bd/sys_top/ip/sys_top_axi_bram_ctrl_3_0_1/sim/sys_top_axi_bram_ctrl_3_0.vhd" \
+"../../../bd/sys_top/ip/sys_top_proc_sys_reset_1_0/sim/sys_top_proc_sys_reset_1_0.vhd" \
+"../../../bd/sys_top/ip/sys_top_proc_sys_reset_3_0/sim/sys_top_proc_sys_reset_3_0.vhd" \
+"../../../bd/sys_top/ip/sys_top_proc_sys_reset_4_0/sim/sys_top_proc_sys_reset_4_0.vhd" \
+"../../../bd/sys_top/ip/sys_top_proc_sys_reset_5_0/sim/sys_top_proc_sys_reset_5_0.vhd" \
+"../../../bd/sys_top/ip/sys_top_smartconnect_0_0/bd_0/ip/ip_1/sim/bd_fa2a_psr_aclk_0.vhd" \
+"../../../bd/sys_top/ip/sys_top_proc_sys_reset_6_0/sim/sys_top_proc_sys_reset_6_0.vhd" \
+"../../../bd/sys_top/ip/sys_top_proc_sys_reset_7_0/sim/sys_top_proc_sys_reset_7_0.vhd" \
+
+nosort
